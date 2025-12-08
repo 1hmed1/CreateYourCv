@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Profolio Pakistan',
+  title: 'QuickCv.pk',
   description: 'Create professional, ATS-friendly CVs and portfolios with ease.',
 };
 

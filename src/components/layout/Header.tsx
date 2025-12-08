@@ -15,7 +15,7 @@ export default function Header() {
       <div className="container flex h-16 max-w-7xl items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6 text-primary"><path d="M15.5 2H8.5a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V4l-4-2z"/><path d="M15 2v4h-5"/><path d="M10 12h4"/><path d="M10 16h4"/><path d="M8 8h2"/></svg>
-          <span className="font-bold text-lg text-primary">Profolio Pakistan</span>
+          <span className="font-bold text-lg text-primary">QuickCv.pk</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
           {navLinks.map((link) => (
@@ -39,7 +39,7 @@ export default function Header() {
               <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center gap-2">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6 text-primary"><path d="M15.5 2H8.5a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V4l-4-2z"/><path d="M15 2v4h-5"/><path d="M10 12h4"/><path d="M10 16h4"/><path d="M8 8h2"/></svg>
-                  <span className="font-bold text-lg text-primary">Profolio Pakistan</span>
+                  <span className="font-bold text-lg text-primary">QuickCv.pk</span>
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (

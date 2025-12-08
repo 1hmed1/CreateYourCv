@@ -3,9 +3,14 @@ export default function Footer() {
     <footer className="bg-card border-t">
       <div className="container mx-auto py-6 px-4 md:px-6">
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-          <p className="text-sm text-foreground/60">
-            &copy; {new Date().getFullYear()} Profolio Pakistan. All rights reserved.
-          </p>
+          <div className="flex flex-col items-center md:items-start gap-2">
+            <p className="text-sm text-foreground/60">
+              &copy; {new Date().getFullYear()} QuickCv.pk. All rights reserved.
+            </p>
+            <p className="text-xs text-foreground/50">
+              Made by Muhammad Ahmed
+            </p>
+          </div>
           <div className="flex items-center gap-4">
             <a href="#" className="text-sm text-foreground/60 hover:text-foreground/80">
               Terms of Service

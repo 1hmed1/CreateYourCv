@@ -42,7 +42,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl font-bold tracking-tighter font-headline">
-                Craft Your Professional Story, Made for Pakistan.
+                Craft Your Professional Story with QuickCv.pk
               </h1>
               <p className="text-lg text-foreground/80">
                 Create fully professional CVs, resumes, and portfolios with multiple attractive templates. Download your documents with ease and land your dream job in the global market.
