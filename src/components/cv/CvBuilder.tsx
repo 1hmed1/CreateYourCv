@@ -88,7 +88,7 @@ export default function CvBuilder() {
         <Tabs value={template} onValueChange={(value) => setTemplate(value as Template)} className="mb-4">
           <TabsList>
             <TabsTrigger value="modern">Modern</TabsTrigger>
-            <TabsTrigger value="classic" disabled>Classic (soon)</TabsTrigger>
+            <TabsTrigger value="classic">Classic</TabsTrigger>
           </TabsList>
         </Tabs>
         <div id="cv-preview-container" className="w-full max-w-[8.5in] aspect-[8.5/11] bg-white shadow-2xl overflow-hidden">
