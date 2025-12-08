@@ -1,3 +1,22 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "A professional desk setup with a laptop showing a CV.",
+      "imageUrl": "https://images.unsplash.com/photo-1664574653790-cee0e10a4242?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkZXNrJTIwbGFwdG9wfGVufDB8fHx8MTc2NTEzNTQzNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "desk laptop"
+    },
+    {
+      "id": "portfolio-project-1",
+      "description": "Abstract design for a portfolio project.",
+      "imageUrl": "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGRlc2lnbnxlbnwwfHx8fDE3NjUxODc0MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract design"
+    },
+    {
+      "id": "portfolio-project-2",
+      "description": "Cityscape for a portfolio project.",
+      "imageUrl": "https://images.unsplash.com/photo-1708536762721-75320f35ddeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjaXR5c2NhcGUlMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzY1MjE2OTQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cityscape architecture"
+    }
+  ]
 }
