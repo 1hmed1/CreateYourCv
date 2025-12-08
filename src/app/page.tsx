@@ -13,23 +13,23 @@ export default function Home() {
   const features = [
     {
       icon: <FileText className="w-8 h-8 text-accent" />,
-      title: "Interactive CV Builder",
-      description: "Easily create a professional CV with our step-by-step guided form. Input your details and watch your CV come to life.",
-    },
-    {
-      icon: <Bot className="w-8 h-8 text-accent" />,
-      title: "ATS Compatibility Checker",
-      description: "Our AI-powered tool analyzes your CV to ensure it's optimized for Applicant Tracking Systems, increasing your chances of getting noticed.",
+      title: "Interactive CV & Resume Builder",
+      description: "Easily create a fully professional CV or resume with our step-by-step guided form. Your career documents, crafted in minutes.",
     },
     {
       icon: <Palette className="w-8 h-8 text-accent" />,
+      title: "Multiple Attractive Templates",
+      description: "Choose from multiple attractive, modern templates for CVs, resumes, and portfolios. Switch designs instantly with a single click.",
+    },
+    {
+      icon: <Bot className="w-8 h-8 text-accent" />,
       title: "Portfolio Showcase",
-      description: "Build a stunning portfolio to showcase your projects, skills, and testimonials. Let your work speak for itself.",
+      description: "Build a stunning portfolio to showcase your projects and skills. Let your work speak for itself and stand out from the crowd.",
     },
     {
       icon: <CheckCircle className="w-8 h-8 text-accent" />,
-      title: "Multiple Modern Templates",
-      description: "Choose from a variety of professionally designed, modern templates for both CVs and portfolios. Switch instantly with a single click.",
+      title: "Easy Download",
+      description: "Easily download your professional CV, resume, and portfolio in a print-ready format, perfect for job applications.",
     },
   ];
 
@@ -45,7 +45,7 @@ export default function Home() {
                 Craft Your Professional Story, Made for Pakistan.
               </h1>
               <p className="text-lg text-foreground/80">
-                Build ATS-friendly CVs and stunning portfolios that stand out. Profolio Pakistan is designed to be simple, professional, and effective for the global job market.
+                Create fully professional CVs, resumes, and portfolios with multiple attractive templates. Download your documents with ease and land your dream job in the global market.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
