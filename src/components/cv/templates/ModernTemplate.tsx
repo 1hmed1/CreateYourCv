@@ -1,5 +1,6 @@
 import type { CvData } from '@/lib/types';
 import { Mail, Phone, Linkedin, Globe, MapPin } from 'lucide-react';
+import Image from 'next/image';
 
 const formatDate = (dateString: string) => {
     if (!dateString || dateString.toLowerCase() === 'present') return 'Present';
@@ -57,6 +58,11 @@ export default function ModernTemplate({ data }: { data: CvData }) {
                 
                 {/* Sidebar */}
                 <div className="col-span-4 border-l-2 border-gray-200 pl-8">
+                    {personalInfo.showPhoto && personalInfo.photoUrl && (
+                        <div className="mb-8">
+                            <Image src={personalInfo.photoUrl} alt={personalInfo.name} width={160} height={160} className="rounded-full mx-auto" data-ai-hint="headshot photo" />
+                        </div>
+                    )}
                     <section>
                         <h2 className="text-lg font-bold text-gray-800">Contact</h2>
                         <div className="mt-2 space-y-2 text-xs">

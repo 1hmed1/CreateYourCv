@@ -1,4 +1,5 @@
 import type { CvData } from '@/lib/types';
+import Image from 'next/image';
 import { Mail, Phone, Linkedin, Globe, MapPin } from 'lucide-react';
 
 const formatDate = (dateString: string) => {
@@ -16,6 +17,11 @@ export default function ClassicTemplate({ data }: { data: CvData }) {
         <div className="bg-white text-black p-10 font-serif text-[11pt] leading-snug h-full w-full">
             {/* Header */}
             <div className="text-center border-b-2 border-black pb-4">
+                {personalInfo.showPhoto && personalInfo.photoUrl && (
+                  <div className="mb-4">
+                      <Image src={personalInfo.photoUrl} alt={personalInfo.name} width={100} height={100} className="rounded-full mx-auto" data-ai-hint="headshot photo" />
+                  </div>
+                )}
                 <h1 className="text-4xl font-bold tracking-wider">{personalInfo.name.toUpperCase()}</h1>
                 <div className="flex justify-center gap-x-4 gap-y-1 text-xs mt-3 flex-wrap">
                     {personalInfo.email && <p className="flex items-center gap-2"><span>{personalInfo.email}</span></p>}

@@ -20,6 +20,8 @@ const initialCvData: CvData = {
     linkedin: 'linkedin.com/in/yourprofile',
     website: 'yourportfolio.com',
     summary: 'A brief professional summary about yourself, highlighting your key skills and career goals. Aim for 2-3 sentences.',
+    photoUrl: 'https://picsum.photos/seed/cvphoto/200/200',
+    showPhoto: true,
   },
   experience: [
     {
@@ -89,6 +91,8 @@ export default function CvBuilder() {
           <TabsList>
             <TabsTrigger value="modern">Modern</TabsTrigger>
             <TabsTrigger value="classic">Classic</TabsTrigger>
+            <TabsTrigger value="professional">Professional</TabsTrigger>
+            <TabsTrigger value="creative">Creative</TabsTrigger>
           </TabsList>
         </Tabs>
         <div id="cv-preview-container" className="w-full max-w-[8.5in] aspect-[8.5/11] bg-white shadow-2xl overflow-hidden">

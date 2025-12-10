@@ -6,6 +6,8 @@ export interface PersonalInfo {
   linkedin: string;
   website: string;
   summary: string;
+  photoUrl?: string;
+  showPhoto?: boolean;
 }
 
 export interface Education {
@@ -54,4 +56,4 @@ export interface PortfolioData {
     projects: Project[];
 }
 
-export type Template = 'modern' | 'classic';
+export type Template = 'modern' | 'classic' | 'professional' | 'creative';

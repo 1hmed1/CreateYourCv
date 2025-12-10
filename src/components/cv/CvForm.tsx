@@ -9,6 +9,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { Trash2, PlusCircle } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Switch } from '@/components/ui/switch';
 
 
 type CvFormProps = {
@@ -21,6 +22,10 @@ export default function CvForm({ cvData, setCvData }: CvFormProps) {
   const handlePersonalInfoChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setCvData(prev => ({ ...prev, personalInfo: { ...prev.personalInfo, [name]: value } }));
+  };
+
+  const handlePhotoToggle = (checked: boolean) => {
+    setCvData(prev => ({ ...prev, personalInfo: { ...prev.personalInfo, showPhoto: checked } }));
   };
 
   const handleNestedChange = <T extends Education | Experience | Skill>(section: keyof CvData, id: string, e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -58,6 +63,11 @@ export default function CvForm({ cvData, setCvData }: CvFormProps) {
             <div><Label htmlFor="address">Address</Label><Input id="address" name="address" value={cvData.personalInfo.address} onChange={handlePersonalInfoChange} /></div>
             <div><Label htmlFor="linkedin">LinkedIn</Label><Input id="linkedin" name="linkedin" value={cvData.personalInfo.linkedin} onChange={handlePersonalInfoChange} /></div>
             <div><Label htmlFor="website">Website/Portfolio</Label><Input id="website" name="website" value={cvData.personalInfo.website} onChange={handlePersonalInfoChange} /></div>
+          </div>
+          <div><Label htmlFor="photoUrl">Photo URL</Label><Input id="photoUrl" name="photoUrl" value={cvData.personalInfo.photoUrl} onChange={handlePersonalInfoChange} /></div>
+          <div className="flex items-center space-x-2">
+            <Switch id="show-photo" checked={cvData.personalInfo.showPhoto} onCheckedChange={handlePhotoToggle} />
+            <Label htmlFor="show-photo">Show Photo on CV</Label>
           </div>
           <div><Label htmlFor="summary">Professional Summary</Label><Textarea id="summary" name="summary" value={cvData.personalInfo.summary} onChange={handlePersonalInfoChange} rows={4} /></div>
         </AccordionContent>
