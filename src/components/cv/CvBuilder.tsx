@@ -49,6 +49,23 @@ const initialCvData: CvData = {
     { id: 'skill2', name: 'TypeScript', level: 'Advanced' },
     { id: 'skill3', name: 'Node.js', level: 'Advanced' },
   ],
+  projects: [
+    { id: 'proj1', title: 'Personal Portfolio Website', url: 'yourportfolio.com', description: 'Designed and developed a personal portfolio to showcase my projects and skills.'}
+  ],
+  certifications: [
+    { id: 'cert1', name: 'Certified React Developer', issuer: 'React University', date: '2022-08-15'}
+  ],
+  achievements: [
+    { id: 'ach1', description: 'Winner of the 2021 Company Hackathon' }
+  ],
+  hobbies: [
+    { id: 'hobby1', name: 'Hiking' },
+    { id: 'hobby2', name: 'Photography' }
+  ],
+  languages: [
+    { id: 'lang1', name: 'English', proficiency: 'Native' },
+    { id: 'lang2', name: 'Urdu', proficiency: 'Native' }
+  ]
 };
 
 export default function CvBuilder() {

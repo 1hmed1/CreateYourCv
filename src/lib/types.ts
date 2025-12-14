@@ -1,3 +1,5 @@
+// @/lib/types.ts
+
 export interface PersonalInfo {
   name: string;
   email: string;
@@ -35,11 +37,46 @@ export interface Skill {
   level: 'Beginner' | 'Intermediate' | 'Advanced' | 'Expert';
 }
 
+export interface CvProject {
+  id: string;
+  title: string;
+  url?: string;
+  description: string;
+}
+
+export interface Certification {
+  id: string;
+  name: string;
+  issuer: string;
+  date: string;
+}
+
+export interface Achievement {
+  id: string;
+  description: string;
+}
+
+export interface Hobby {
+  id: string;
+  name: string;
+}
+
+export interface Language {
+  id: string;
+  name: string;
+  proficiency: string;
+}
+
 export interface CvData {
   personalInfo: PersonalInfo;
   education: Education[];
   experience: Experience[];
   skills: Skill[];
+  projects: CvProject[];
+  certifications: Certification[];
+  achievements: Achievement[];
+  hobbies: Hobby[];
+  languages: Language[];
 }
 
 export interface Project {
